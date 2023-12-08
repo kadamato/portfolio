@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: intro 0.8s ease-out 2.43s forwards;
+  animation: intro 0.8s ease-out 3s forwards;
 }
 
 .title {

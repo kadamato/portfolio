@@ -6,7 +6,7 @@ export default function Intro() {
   useEffect(() => {
     const time = setTimeout(() => {
       document.getElementById("introStart").style.display = "none";
-    }, 2000);
+    }, 3000);
 
     // return () => {
     //   clearTimeout(time);
