@@ -1,5 +1,6 @@
 import { Roboto_Flex } from "next/font/google";
 import StyledComponentsRegistry from "../lib/StyledComponentRegistry";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import "../ui/global.css";
 
@@ -13,7 +14,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <StyledComponentsRegistry>
-        <body className={robotoFlex.className}>{children}</body>
+        <body className={robotoFlex.className}>{children}
+        
+        <SpeedInsights/>
+        </body>
       </StyledComponentsRegistry>
     </html>
   );
