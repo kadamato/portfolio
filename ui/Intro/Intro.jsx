@@ -8,9 +8,9 @@ export default function Intro() {
       document.getElementById("introStart").style.display = "none";
     }, 2000);
 
-    return () => {
-      clearTimeout(time);
-    };
+    // return () => {
+    //   clearTimeout(time);
+    // };
   }, []);
   return (
     <div className={intro.box} id="introStart">
