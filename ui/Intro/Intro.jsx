@@ -11,7 +11,7 @@ export default function Intro() {
     return () => {
       clearTimeout(time);
     };
-  });
+  }, []);
   return (
     <div className={intro.box} id="introStart">
       <div className={intro.title}>
