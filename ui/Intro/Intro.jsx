@@ -8,11 +8,11 @@ export default function Intro() {
       const time = setTimeout(() => {
         document.getElementById("introStart").style.display = "none";
       }, 2000);
-
-      return () => {
-        clearTimeout(time);
-      };
     });
+
+    return () => {
+      window.removeEventListener("DOMContentLoaded", () => {});
+    };
   }, []);
   return (
     <div className={intro.box} id="introStart">
