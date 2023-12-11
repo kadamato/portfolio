@@ -14,9 +14,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <StyledComponentsRegistry>
-        <body className={robotoFlex.className}>{children}
-        
-        <SpeedInsights/>
+        <body className={robotoFlex.className}>
+          {children}
+          <SpeedInsights />
         </body>
       </StyledComponentsRegistry>
     </html>

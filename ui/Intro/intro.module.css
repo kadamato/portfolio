@@ -45,7 +45,6 @@
 @keyframes intro {
   100% {
     height: 0;
-    visibility: hidden;
   }
 }
 

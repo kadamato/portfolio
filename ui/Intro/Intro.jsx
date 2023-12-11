@@ -4,13 +4,15 @@ import { useEffect } from "react";
 
 export default function Intro() {
   useEffect(() => {
-    const time = setTimeout(() => {
-      document.getElementById("introStart").style.display = "none";
-    }, 2000);
+    window.addEventListener("DOMContentLoaded", () => {
+      const time = setTimeout(() => {
+        document.getElementById("introStart").style.display = "none";
+      }, 2000);
 
-    // return () => {
-    //   clearTimeout(time);
-    // };
+      return () => {
+        clearTimeout(time);
+      };
+    });
   }, []);
   return (
     <div className={intro.box} id="introStart">
